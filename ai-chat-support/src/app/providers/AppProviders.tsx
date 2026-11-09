@@ -1,11 +1,13 @@
 import React, { ReactNode } from 'react';
-import { ThemeProvider } from './ThemeProvider';
-import { QueryProvider } from './QueryProvider';
+import { ThemeProvider } from '@mui/material/styles';
+import { CssBaseline } from '@mui/material';
+import theme from '../../theme';
 
 export const AppProviders: React.FC<{ children: ReactNode }> = ({ children }) => {
   return (
-    <ThemeProvider>
-      <QueryProvider>{children}</QueryProvider>
+    <ThemeProvider theme={theme}>
+      <CssBaseline />
+      {children}
     </ThemeProvider>
   );
 };

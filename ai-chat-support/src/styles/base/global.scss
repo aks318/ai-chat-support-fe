@@ -1,0 +1,33 @@
+// Global styles
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 $spacing-md;
+}
+
+.button {
+  padding: $spacing-sm $spacing-md;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  
+  &.primary {
+    background-color: $primary-color;
+    color: white;
+    
+    &:hover {
+      background-color: darken($primary-color, 10%);
+    }
+  }
+  
+  &.secondary {
+    background-color: $secondary-color;
+    color: white;
+    
+    &:hover {
+      background-color: darken($secondary-color, 10%);
+    }
+  }
+}

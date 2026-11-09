@@ -8,7 +8,8 @@ export const AuthLayout: React.FC<{ children: ReactNode }> = ({ children }) => {
         display: 'flex',
         minHeight: '100vh',
         alignItems: 'center',
-        justifyContent: 'center'
+        justifyContent: 'center',
+        bgcolor: '#121212'
       }}
     >
       {children}
